@@ -21,8 +21,10 @@ const Login = () => {
             if(response.ok){
                 const data = await response.json();
                 localStorage.setItem('token', data.token);
-                alert('Login successful');
-                navigate('/home')
+                localStorage.setItem('name', data.name);
+                
+                navigate('/financials')
+                navigate(0)
             } else{
                 setError('Dados inexistentes')
             }

@@ -1,5 +1,6 @@
+
 const Home = () => {
-    return <h1>Tela inicial</h1>
+    return (<h1>Tela inicial</h1>)
 }
 
 export default Home;
