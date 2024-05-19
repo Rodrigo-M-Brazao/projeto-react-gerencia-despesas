@@ -14,7 +14,7 @@ const MenuBar = () => {
     
     useEffect(() => {
       setIsLoggedIn(isAuthenticated());
-      console.log('aqui', isLoggedIn)
+      
     }, []);
   
     const handleLogout = () => {
